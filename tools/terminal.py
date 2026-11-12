@@ -151,11 +151,11 @@ def build(theme):
             if nxt in ('cmd', 'prompt'):
                 y += 8; t += 260  # 命令组之间留一点白
     H = y + 26
-    title, tw = text('hychiiu@inbluemoon: ~', 0, 0, 'f')
+    title, tw = text('i@hychiiu: ~', 0, 0, 'f')
     tx = (W - tw * CELL) / 2
     dots = ''.join(f'<circle cx="{22 + k * 18}" cy="{BAR / 2}" r="5.5" fill="{c["dot"]}"/>' for k in range(3))
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-labelledby="t">
-<title id="t">hychiiu@inbluemoon — whoami: 怀秋 · hychiiu. stack: java, linux, docker. hobbies: homelab, nas, networking, self-hosting, ai coding. blog: hychiiu.com, telegram: t.me/inbluemoon, github: github.com/hychiiu, mail: i@hychiiu.com</title>
+<title id="t">i@hychiiu — whoami: 怀秋 · hychiiu. stack: java, linux, docker. hobbies: homelab, nas, networking, self-hosting, ai coding. blog: hychiiu.com, telegram: t.me/inbluemoon, github: github.com/hychiiu, mail: i@hychiiu.com</title>
 <style>.i{{fill:{c["ink"]}}}.m{{fill:{c["muted"]}}}.f{{fill:{c["faint"]}}}.a{{fill:{c["accent"]}}}.cur{{fill:{c["accent"]}}}</style>
 <defs>{"".join(glyph_defs)}{"".join(clips)}</defs>
 <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="10" fill="{c["bg"]}" stroke="{c["border"]}"/>
