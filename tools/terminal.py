@@ -1,4 +1,4 @@
-"""生成 README 用的终端动画 SVG（assets/terminal-light.svg / terminal-dark.svg）。
+"""生成 README 用的终端动画 SVG（assets/terminal-light-v2.svg / terminal-dark-v2.svg）。
 
 文字全部转成路径（JetBrains Mono + Noto Sans Mono CJK，均为 OFL），
 因为 GitHub 以 <img> 渲染 SVG，无法加载网页字体。动画用 SMIL（打字、逐行出现、光标闪烁）。
