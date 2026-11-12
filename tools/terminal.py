@@ -177,6 +177,6 @@ for th in THEMES:
     THEMES[th]['accent'] = ACCENT[th]
 args.out.mkdir(parents=True, exist_ok=True)
 for th in THEMES:
-    out = args.out / f'terminal-{th}.svg'
+    out = args.out / f'terminal-{th}-v2.svg'
     out.write_text(build(th), encoding='utf-8')
     print(out, out.stat().st_size)
